@@ -24,7 +24,7 @@ CREATE TABLE order_item (
     item_id INT NOT NULL,
     quantity INT NOT NULL,
     PRIMARY KEY (order_id, item_id),
-    FOREIGN KEY (order_id) REFERENCES order(order_id),
+    FOREIGN KEY (order_id) REFERENCES `order`(order_id),
     FOREIGN KEY (item_id) REFERENCES item(item_id)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE shipment (
     warehouse_id INT NOT NULL,
     ship_date DATETIME NOT NULL,
     PRIMARY KEY (order_id, warehouse_id),
-    FOREIGN KEY (order_id) REFERENCES order(order_id),
+    FOREIGN KEY (order_id) REFERENCES `order`(order_id),
     FOREIGN KEY (warehouse_id) REFERENCES warehouse(warehouse_id)
 );
 
