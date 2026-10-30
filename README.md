@@ -7,3 +7,6 @@ Labs for the Database Course; 7th Semester, Computer Communication Engineering i
 
 ## Lab 5
 - [Lab 5](./Lab5/Lab5.pdf)
+
+## Lab 6
+- [Lab 6](./Lab6/Lab6.pdf)
